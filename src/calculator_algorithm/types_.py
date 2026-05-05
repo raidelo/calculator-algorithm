@@ -53,3 +53,6 @@ class Operation:
     operator: Operator
     left: Atom | Operation
     right: Atom | Operation
+
+    def __str__(self) -> str:
+        return f"( {self.left} {self.operator} {self.right} )"
