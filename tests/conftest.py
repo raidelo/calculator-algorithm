@@ -85,8 +85,8 @@ def test_data() -> TestDataType:
                 Operator.ADD,
                 Operation(
                     Operator.MULTIPLY,
-                    Atom(3),
-                    Operation(Operator.MULTIPLY, Atom(4), Atom(5)),
+                    Operation(Operator.MULTIPLY, Atom(3), Atom(4)),
+                    Atom(5),
                 ),
                 Atom(6),
             ),
