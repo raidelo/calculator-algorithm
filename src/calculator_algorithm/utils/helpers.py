@@ -1,7 +1,7 @@
 from decimal import Decimal
 from typing import Any, TypeIs
 
-from calculator_algorithm.types_ import Atom, Operation
+from calculator_algorithm.types_ import Atom, Operation, Operator
 
 
 def isatom(item: Any) -> TypeIs[Atom]:
@@ -10,3 +10,7 @@ def isatom(item: Any) -> TypeIs[Atom]:
 
 def isoperation(item: Any) -> TypeIs[Operation]:
     return isinstance(item, Operation)
+
+
+def isoperator(item: Any) -> TypeIs[Operator]:
+    return isinstance(item, Operator)
