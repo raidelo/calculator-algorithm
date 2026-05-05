@@ -56,3 +56,6 @@ class Operation:
 
     def __str__(self) -> str:
         return f"( {self.left} {self.operator} {self.right} )"
+
+    def __repr__(self) -> str:
+        return str(self)
